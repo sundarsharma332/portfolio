@@ -3,7 +3,7 @@ import RecentProjects from './RecentProjects'
 
 const features = [
   {
-    name: 'Pus',
+    name: 'Pusgit push -u origin main',
     description:
       'Morbi viverra dui mi arcu sed. Tellus semper adipiscing suspendisse semper morbi. Odio urna massa nunc massa.',
     icon: CloudArrowUpIcon,
