@@ -3,7 +3,7 @@ import SoftwaresUsedForDesign from './Softwares'
 
 export default function ToolsUsed() {
   return (
-    <div className="bg-white py-24 sm:py-32">
+    <div className="bg-white sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:text-center">
           <h2 className="text-base font-semibold leading-7 text-indigo-600">srsuiuxdesign</h2>
@@ -14,7 +14,7 @@ export default function ToolsUsed() {
           Every day, I employ a set of software and tools to fulfill client and company needs. These daily companions enhance efficiency and enable seamless collaboration in my professional endeavors.
            </p>
         </div>
-        <div className="mx-auto mt-4 max-w-2xl sm:mt-20 lg:mt-4 lg:max-w-7xl">
+        <div className="mx-auto mt-2 max-w-2xl sm:mt-12 lg:mt-2 lg:max-w-7xl">
         <SoftwaresUsedForDesign/>
         </div>
       </div>

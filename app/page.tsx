@@ -1,11 +1,11 @@
 
 "use client"
 
+import CodingSoftwaresUsed from "./components/CodingSoftware";
 import Features from "./components/Features";
 import HeroSection from "./components/HeroSection";
 import Projects from "./components/Projects";
 import ToolsUsed from "./components/SoftwareCollections";
-import SoftwareUsedTillNow from "./components/softwareUse";
 
 export default function Home() {
   return (
@@ -13,6 +13,7 @@ export default function Home() {
       <main className="mb-auto">
         <HeroSection />
         <ToolsUsed/>
+        <CodingSoftwaresUsed/>
         <Projects/>
         <Features/>
         
