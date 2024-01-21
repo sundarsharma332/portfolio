@@ -10,9 +10,7 @@ const navigation = [
 
     { name: 'Home', href: '/' },
     { name: 'About', href: '/about' },
-    { name: 'Education', href: '/education' },
     { name: 'Projects', href: '/Projects' },
-    { name: 'Resume', href: '/resume' },
 ]
 
 export default function Navbar() {
@@ -54,7 +52,7 @@ export default function Navbar() {
                         ))}
                     </div>
                     <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-                        <Link href="#" className="bg-gradient-to-r from-fuchsia-600 to-blue-600 p-4 text-sm font-semibold leading-6 text-white">
+                        <Link href="mailto:srsuiuxdesign@gmail.com" className="bg-gradient-to-r from-fuchsia-600 to-blue-600 p-2 text-sm font-semibold leading-6 text-white rounded-lg">
                             srsuiuxdesign@gmail.com <span aria-hidden="true">&rarr;</span>
                         </Link>
                     </div>

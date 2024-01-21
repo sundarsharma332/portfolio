@@ -25,14 +25,48 @@ const programmingSoftwares = [
       imageSrc: './github.png',
       imageAlt: 'Person using a pen to cross a task off a productivity paper card.',
     },
-    {
-      id: 4,
-      name: 'GitLab',
-      href: 'https://about.gitlab.com/',
-      title: 'Version Management',
-      imageSrc: './gitlab.png',
-      imageAlt: 'Hand holding black machined steel mechanical pencil with brass tip and top.',
-    },
+
+      {
+        id: 4,
+        name: 'Flutter & Dart',
+        href: 'https://flutter.dev/',
+        title: 'Android / IOS App Development Framework',
+        imageSrc: './flutter.png',
+        imageAlt: 'Olive drab green insulated bottle with flared screw lid and flat top.',
+      },
+      {
+        id: 5,
+        name: 'React JS',
+        href: 'https://github.com/',
+        title: 'Web UI Library',
+        imageSrc: './re.png',
+        imageAlt: 'Person using a pen to cross a task off a productivity paper card.',
+      },
+      {
+        id: 6,
+        name: 'Tailwind Css',
+        href: 'https://tailwindcss.com/',
+        title: 'CSS Utility Framework',
+        imageSrc: './tw.png',
+        imageAlt: 'Hand holding black machined steel mechanical pencil with brass tip and top.',
+      },
+      {
+        id: 7,
+        name: 'HTML',
+        href: 'https://developer.mozilla.org/en-US/docs/Web/HTML',
+        title: 'Markup Language',
+        imageSrc: './html.png',
+        imageAlt: 'Hand holding black machined steel mechanical pencil with brass tip and top.',
+      },
+      {
+        id: 8,
+        name: 'CSS',
+        href: 'https://developer.mozilla.org/en-US/docs/Web/CSS',
+        title: 'Cascade Style Sheet',
+        imageSrc: './css.png',
+        imageAlt: 'Hand holding black machined steel mechanical pencil with brass tip and top.',
+      },
+     
    
   ]
   

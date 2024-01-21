@@ -8,7 +8,7 @@ export default function ToolsUsed() {
         <div className="mx-auto max-w-2xl lg:text-center">
           <h2 className="text-base font-semibold leading-7 text-indigo-600">srsuiuxdesign</h2>
           <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-            Tools & Softwares I use
+            Design & Productivity Softwares I use
           </p>
           <p className="mt-6 text-lg leading-8 text-gray-600">
           Every day, I employ a set of software and tools to fulfill client and company needs. These daily companions enhance efficiency and enable seamless collaboration in my professional endeavors.

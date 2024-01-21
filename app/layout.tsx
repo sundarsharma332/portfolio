@@ -16,6 +16,7 @@ export default function RootLayout({
         <html lang="en">
             <Head />
             <body className={`${inter.className} flex flex-col h-screen justify-between`}>
+               <Navbar/>
                {children}
                 <Footer />
             </body>

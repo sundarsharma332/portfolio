@@ -1,10 +1,9 @@
 
 "use client"
 
+import CaseStudyLists from "./components/CaseStudy";
 import CodingSoftwaresUsed from "./components/CodingSoftware";
-import Features from "./components/Features";
 import HeroSection from "./components/HeroSection";
-import Projects from "./components/Projects";
 import ToolsUsed from "./components/SoftwareCollections";
 
 export default function Home() {
@@ -12,12 +11,10 @@ export default function Home() {
       <>
       <main className="mb-auto">
         <HeroSection />
+        <CaseStudyLists/>
         <ToolsUsed/>
         <CodingSoftwaresUsed/>
-        <Projects/>
-        <Features/>
-        
-       
+  
       </main>
       </>
   )
