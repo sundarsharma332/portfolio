@@ -12,7 +12,6 @@ export default function Home() {
       <>
       <main className="mb-auto">
         <HeroSection />
-        {/* <SoftwareUsedTillNow/> */}
         <ToolsUsed/>
         <Projects/>
         <Features/>
