@@ -7,14 +7,14 @@ export default function HeroSection() {
 
     return (
         // <div className="bg-gradient-to-r from-fuchsia-600  to-blue-600">
-        <div className="bg-white shadow-lg mx-24 my-24 rounded-lg">
+        <div className="bg-white shadow-lg mx-24 my-24 sm:my-6 sm:mx-6 rounded-lg">
             <div className="relative isolate px-6 pt-4 lg:px-16">
                 <div
                     className="absolute inset-x-0 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
                     aria-hidden="true"
                 >
                 </div>
-                <div className="mx-auto max-w-4xl py-12 sm:py-12 lg:py-12">
+                <div className="mx-auto max-w-7xl py-12 sm:py-12 lg:py-12">
                     <div className="sm:mb-8 sm:flex sm:justify-center">
                         <div className="rounded px-3 text-sm">
                         {/* <img className='absolute top-30 left-8 h-[300px] rounded-xl' src="https://cdni.iconscout.com/illustration/premium/thumb/graphic-designer-4322825-3649329.png" alt="DesignersLife" /> */}
