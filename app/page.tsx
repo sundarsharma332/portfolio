@@ -9,6 +9,7 @@ import HeroBanner from "./components/banner";
 import DevelopmentProjects from "./components/developmentProjects";
 import ExpertiseSection from "./components/expertise";
 import HireMe from "./components/idea";
+import ClientTestimonials from "./components/testimonial";
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
         <DevelopmentProjects />
         <ToolsUsed />
         <CodingSoftwaresUsed />
+        <ClientTestimonials />
         <HireMe />
       </main>
     </>
