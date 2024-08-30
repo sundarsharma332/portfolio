@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Dialog } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import Link from 'next/link';
@@ -17,51 +17,49 @@ const navigation = [
 
 export default function Navbar() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+    const [isOverflowing, setIsOverflowing] = useState(false);
     const pathname = usePathname();
 
+    useEffect(() => {
+        const checkOverflow = () => {
+            const navbar = document.getElementById('main-navbar');
+            if (navbar) {
+                setIsOverflowing(navbar.scrollWidth > navbar.clientWidth);
+            }
+        };
+
+        checkOverflow();
+        window.addEventListener('resize', checkOverflow);
+        return () => window.removeEventListener('resize', checkOverflow);
+    }, []);
+
     return (
-        <header className="fixed bottom-4 left-1/2 transform -translate-x-1/2 z-50 h-[80px] rounded-full border-4">
-            <nav
-                className="flex items-center justify-between h-full px-4 lg:px-8 bg-white/30 backdrop-blur-md rounded-full shadow-md border-3 border-gradient"
-                aria-label="Global"
-            >
-                <div className="flex lg:flex-1">
-                    <Link href="/" className="-m-1.5 p-1.5">
-                        <span className="sr-only">Your Company</span>
-                        <svg
-                            width="40"
-                            height="40"
-                            viewBox="0 0 97 84"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                        >
-                            {/* SVG Content */}
-                        </svg>
-                    </Link>
+        <>
+            {isOverflowing && (
+                <div className="fixed top-0 left-0 right-0 bg-yellow-100 text-yellow-800 p-2 text-center text-sm z-50">
+                    For better viewing experience, set zoom to 80%-100%
                 </div>
-                <div className="hidden lg:flex lg:gap-x-6">
-                    {navigation.map((item) => (
-                        <Link key={item.name} href={item.href}
-                            className={`text-sm font-semibold leading-6 px-4 py-2 rounded-lg ${pathname === item.href
-                                ? 'bg-gradient-to-r from-fuchsia-600 to-blue-600 text-white'
-                                : 'text-gray-900 hover:bg-gray-100'
-                                }`}
-                        >
-                            {item.name}
-                        </Link>
-                    ))}
-                </div>
-                <div className="lg:hidden">
-                    <button
-                        type="button"
-                        className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
-                        onClick={() => setMobileMenuOpen(true)}
-                    >
-                        <span className="sr-only">Open main menu</span>
-                        <Bars3Icon className="h-6 w-6" aria-hidden="true" />
-                    </button>
-                </div>
-            </nav>
+            )}
+            <header className="fixed bottom-4 left-1/2 transform -translate-x-1/2 z-40">
+                <nav
+                    id="main-navbar"
+                    className="flex items-center justify-center h-14 px-4 bg-white/30 backdrop-blur-md rounded-full shadow-md border border-gray-200"
+                    aria-label="Global"
+                >
+                    <div className="flex items-center space-x-1 sm:space-x-2">
+                        {navigation.map((item) => (
+                            <Link key={item.name} href={item.href}
+                                className={`text-xs sm:text-sm font-medium px-2 py-1 rounded-full transition-colors duration-200 whitespace-nowrap ${pathname === item.href
+                                        ? 'bg-gradient-to-r from-fuchsia-600 to-blue-600 text-white'
+                                        : 'text-gray-700 hover:bg-gray-100'
+                                    }`}
+                            >
+                                {item.name}
+                            </Link>
+                        ))}
+                    </div>
+                </nav>
+            </header>
 
             <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
                 <div className="fixed inset-0 z-50" />
@@ -70,8 +68,8 @@ export default function Navbar() {
                         <Link href="/" className="-m-1.5 p-1.5">
                             <span className="sr-only">Your Company</span>
                             <svg
-                                width="40"
-                                height="40"
+                                width="32"
+                                height="32"
                                 viewBox="0 0 97 84"
                                 fill="none"
                                 xmlns="http://www.w3.org/2000/svg"
@@ -94,8 +92,8 @@ export default function Navbar() {
                                 {navigation.map((item) => (
                                     <Link key={item.name} href={item.href}
                                         className={`-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 ${pathname === item.href
-                                            ? 'bg-gradient-to-r from-fuchsia-600 to-blue-600 text-white'
-                                            : 'text-gray-900 hover:bg-gray-100'
+                                                ? 'bg-gradient-to-r from-fuchsia-600 to-blue-600 text-white'
+                                                : 'text-gray-900 hover:bg-gray-100'
                                             }`}
                                         onClick={() => setMobileMenuOpen(false)}
                                     >
@@ -107,6 +105,6 @@ export default function Navbar() {
                     </div>
                 </Dialog.Panel>
             </Dialog>
-        </header>
+        </>
     );
 }
