@@ -20,7 +20,7 @@ const projects = [
 
 export default function CaseStudySection() {
   return (
-    <div className="bg-white">
+    <div id="uxprojects" className="bg-white">
       <div className="mx-auto max-w-2xl px-4 py-8 sm:px-6 sm:py-16 lg:max-w-7xl lg:px-8 text-center">
         <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mb-12">Recent UI/UX Projects</h2>
         <div className="flex flex-col sm:flex-row justify-center space-y-12 sm:space-y-0 sm:space-x-8">

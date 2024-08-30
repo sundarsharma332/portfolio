@@ -82,7 +82,8 @@ const HeroSection: React.FC = () => {
                 </p>
                 <div className="mt-8 animated-element">
                     <Link
-                        href="#"
+                        href="#uxprojects"
+                        scroll={true}
                         className="inline-block rounded-full bg-gradient-to-r from-purple-500 to-indigo-500 px-8 py-4 text-center font-bold text-white transition-all duration-500"
                     >
                         See Recent Projects
