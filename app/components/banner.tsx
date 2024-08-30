@@ -1,5 +1,4 @@
 "use client";
-
 import { useState } from 'react';
 import { XMarkIcon } from '@heroicons/react/20/solid';
 
@@ -46,7 +45,9 @@ export default function HeroBanner() {
                         If you are a developer and have interest in working in Flutter, Node.js, and AI projects. Connect Now.
                     </p>
                     <a
-                        href="#"
+                        href="https://github.com/sundarsharma332"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="flex-none rounded-full bg-gradient-to-r from-fuchsia-600 to-blue-600 px-3.5 py-1 text-sm font-semibold text-white shadow-sm hover:bg-blue-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
                     >
                         Connect Now <span aria-hidden="true">&rarr;</span>
