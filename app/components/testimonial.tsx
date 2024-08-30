@@ -5,7 +5,7 @@ import { FaLinkedin, FaStar } from "react-icons/fa";
 const testimonials = [
     {
         id: 1,
-        quote: "“Working with this team was an incredible experience. The UX research, design, and development were top-notch, resulting in a seamless mobile app, web app, and admin dashboard. The visuals were exceptional, and the attention to detail was evident in every aspect of the project.”",
+        quote: "“Exceptional team. Their design and development led to a seamless, visually stunning product that exceeded expectations.”",
         name: "Gregg Hansen",
         position: "CEO of Bundee and Flux Group",
         image: "https://media.licdn.com/dms/image/v2/C4E03AQEFMg-Eaxnmww/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1588089378681?e=1730332800&v=beta&t=ExocxvSB4LhcNgIjRnNYeXFPs19nd1rg2vVjuxvPKTc",
@@ -16,7 +16,7 @@ const testimonials = [
     },
     {
         id: 2,
-        quote: "“The team did an excellent job on Bundee, particularly in UX and development. Their expertise in fleet management systems is outstanding, and their attention to detail ensured a high-quality product that met all of our needs.”",
+        quote: "“Outstanding UX and development work. The team's attention to detail and expertise made all the difference.”",
         name: "Umesh Murthy",
         position: "Co-Founder/CIO",
         image: "https://media.licdn.com/dms/image/v2/C4D03AQE3vyd9-ZPGog/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1516253727495?e=1730332800&v=beta&t=nZ_NJfjNWXfmQS0zL5HEpaz9wiHjCPsPRiPb9dM4SSU",
@@ -27,7 +27,7 @@ const testimonials = [
     },
     {
         id: 3,
-        quote: "“Their work on Bundee was exceptional, especially in terms of UX and development. The team's ability to understand complex requirements and deliver a user-friendly solution was impressive.”",
+        quote: "“Impressive work. The team's ability to deliver user-friendly solutions was remarkable.”",
         name: "Eric Rasanayagam",
         position: "Co-Founder and Head of Engineering",
         image: "https://media.licdn.com/dms/image/v2/C5603AQHR4A1d7NzuzA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1516257628929?e=1730332800&v=beta&t=VQ2xMPsGBwcoiCP8Jf_13J_Fn6Pw0B5O-DoDSmd2Kfo",
@@ -38,16 +38,28 @@ const testimonials = [
     },
     {
         id: 4,
-        quote: "“Their comprehensive work across multiple projects, including Bundee, ThirdEye, HRMS, and School360, was nothing short of exceptional. The team's ability to manage and deliver on complex requirements made them an invaluable partner.”",
+        quote: "“Delivered on multiple projects with excellence. Their ability to manage complex requirements was top-notch.”",
         name: "Prasadtsp",
         position: "CEO Dimension64, Founder/Director Sarvaantar AI",
         image: "https://media.licdn.com/dms/image/v2/C5603AQGq4lfa7y6a8g/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1518154953598?e=1730332800&v=beta&t=jxEWF38-Cp6gvVfLKwcid-RfEpC9TzzwdyJK13D1cms",
         duration: "1.7 years",
         project: "Bundee, ThirdEye, HRMS, School360, + More",
         linkedin: "https://www.linkedin.com/in/prasadtsp/",
-        projectLink: "/projects/bundee", // Example link to project details page
+        projectLink: "/projects/bundee",
+    },
+    {
+        id: 5,
+        quote: "“A passionate and skilled developer with a deep commitment to AI and education. Highly recommended.”",
+        name: "Frank He",
+        position: "CEO and Founder of JuniorIT, Haicam Tech",
+        image: "https://media.licdn.com/dms/image/C4D03AQGq4lfa7y6a8g/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1518154953598?e=1730332800&v=beta&t=jxEWF38-Cp6gvVfLKwcid-RfEpC9TzzwdyJK13D1cms",
+        duration: "1.8 years + Current",
+        project: "JuniorIT, DevBrain AI, + More",
+        linkedin: "https://www.linkedin.com/in/frank-he/",
+        projectLink: "https://www.juniorit.ai/",
     },
 ];
+
 
 
 export default function ClientTestimonials() {
