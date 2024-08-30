@@ -130,7 +130,7 @@ export default function ProjectsPage() {
                             className="group bg-white shadow-md rounded-lg overflow-hidden transition-transform transform hover:scale-105 hover:shadow-lg"
                             style={{ width: '500px', height: '600px', transition: 'all 0.3s ease' }}
                         >
-                            <div className="w-full bg-gray-200" style={{ height: '250px', overflow: 'hidden' }}>
+                            <div className="w-full bg-gray-200" style={{ height: '200px', overflow: 'hidden' }}>
                                 <img
                                     src={project.imageSrc}
                                     alt={project.imageAlt}
