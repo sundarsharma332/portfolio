@@ -6,6 +6,7 @@ import CodingSoftwaresUsed from "./components/CodingSoftware";
 import HeroSection from "./components/HeroSection";
 import ToolsUsed from "./components/SoftwareCollections";
 import HeroBanner from "./components/banner";
+import MediumPosts from "./components/blogs";
 import DevelopmentProjects from "./components/developmentProjects";
 import ExpertiseSection from "./components/expertise";
 import HireMe from "./components/idea";
@@ -24,6 +25,7 @@ export default function Home() {
         <CodingSoftwaresUsed />
         <ClientTestimonials />
         <HireMe />
+        <MediumPosts />
       </main>
     </>
   )

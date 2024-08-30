@@ -33,6 +33,14 @@ export default function Navbar() {
         return () => window.removeEventListener('resize', checkOverflow);
     }, []);
 
+    // Function to determine if the current route matches the link's href
+    const isActive = (href: string) => {
+        if (href === '/') {
+            return pathname === href; // Only return true if pathname is exactly '/'
+        }
+        return pathname.startsWith(href); // Return true if pathname starts with the href
+    };
+
     return (
         <>
             {isOverflowing && (
@@ -49,9 +57,9 @@ export default function Navbar() {
                     <div className="flex items-center space-x-1 sm:space-x-2">
                         {navigation.map((item) => (
                             <Link key={item.name} href={item.href}
-                                className={`text-xs sm:text-sm font-medium px-2 py-1 rounded-full transition-colors duration-200 whitespace-nowrap ${pathname === item.href
-                                        ? 'bg-gradient-to-r from-fuchsia-600 to-blue-600 text-white'
-                                        : 'text-gray-700 hover:bg-gray-100'
+                                className={`text-xs sm:text-sm font-medium px-2 py-1 rounded-full transition-colors duration-200 whitespace-nowrap ${isActive(item.href)
+                                    ? 'bg-gradient-to-r from-fuchsia-600 to-blue-600 text-white'
+                                    : 'text-gray-700 hover:bg-gray-100'
                                     }`}
                             >
                                 {item.name}
@@ -91,9 +99,9 @@ export default function Navbar() {
                             <div className="space-y-2 py-6">
                                 {navigation.map((item) => (
                                     <Link key={item.name} href={item.href}
-                                        className={`-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 ${pathname === item.href
-                                                ? 'bg-gradient-to-r from-fuchsia-600 to-blue-600 text-white'
-                                                : 'text-gray-900 hover:bg-gray-100'
+                                        className={`-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 ${isActive(item.href)
+                                            ? 'bg-gradient-to-r from-fuchsia-600 to-blue-600 text-white'
+                                            : 'text-gray-900 hover:bg-gray-100'
                                             }`}
                                         onClick={() => setMobileMenuOpen(false)}
                                     >
